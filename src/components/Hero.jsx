@@ -2,6 +2,7 @@ import { motion } from "framer-motion";
 
 import { styles } from "../styles";
 import { ComputersCanvas } from "./canvas";
+import { mobile_bg } from "../assets/index";
 
 const Hero = () => {
   return (
@@ -19,16 +20,21 @@ const Hero = () => {
             Hi, I'm <span className="text-[#915EFF]">Taimoor</span>
           </h1>
           <p className={`${styles.heroSubText} mt-2 text-white-100`}>
-            I develop exceptional web solutions
-            <br className="sm:block hidden" /> with a passion for innovation and
-            excellence
+            Helping online businesses
+            <br className="sm:block hidden" /> to shine their web experience.
           </p>
         </div>
       </div>
 
+      {/* Only visible on tablet and desktop devices*/}
       <ComputersCanvas />
 
-      <div className="absolute xs:bottom-10 bottom-32 w-full flex justify-center items-center">
+      {/* Only visible on mobile devices*/}
+      <div className="md:hidden absolute xs:bottom-10 bottom-20 w-full flex justify-center items-center">
+        <img src={mobile_bg} />
+      </div>
+
+      <div className="absolute xs:bottom-10 bottom-1 w-full flex justify-center items-center">
         <a href="#about">
           <div className="w-[35px] h-[64px] rounded-3xl border-4 border-secondary flex justify-center items-start p-2">
             <motion.div

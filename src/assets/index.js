@@ -29,6 +29,8 @@ import kinfolk from "./kinfolk.png";
 import dfsarmy from "./dfs-army.png";
 import noblequote from "./noblequote.png";
 
+import mobile_bg from "./mobile-bg.png";
+
 export {
   logo,
   backend,
@@ -57,4 +59,5 @@ export {
   kinfolk,
   dfsarmy,
   noblequote,
+  mobile_bg,
 };
